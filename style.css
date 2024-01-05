@@ -10,29 +10,59 @@ html {
     height: 0px;
     background: transparent;
 }
-.nav_container{
-    display: flex;
-    justify-content: space-evenly;
-}
 .navbar_logo{
+    display: inline-block !important;
     width: 30%;
     padding-left: 20%;
 }
-.navbar-nav > a{
-    font-size: 125%;
+.navbar_logo_smartphone{
+    display: none !important;
+}
+.nav_table_smartphones{
+    display: none !important;
+}
+.nav-link, .navbar-brand{
+    font-size: 125% !important;
+    color: white !important;
+    text-transform: uppercase;
+}
+.nav-link:hover{
+    color: var(--verde) !important;
+}
+.navbar_logo{
+    width: 30% !important;
 }
 
+
+@media only screen and (max-width:1800px){
+    .collapse{
+        margin-left: -35% !important;; 
+    }
+}
 /*Smartphone management*/
-@media only screen and (max-width:950px){
+@media only screen and (max-width:992px){
+    .navbar_logo{
+        display: none !important;
+    }
+    .navbar_logo_smartphone{
+        display: inline-block !important;
+        width: 15%;
+    }
 }
 
 /*Tablet management*/
-@media only screen and (max-width:1120px){
+@media only screen and (max-width:1325px){
     .navbar_logo{
-        width: 25%;
-        padding-left: 5%;
+        padding: 0 0 0 1% !important;
+        margin: 0 0 0 1% !important;
     }
-    .navbar-nav{
-        margin-left: -50% !important;
+    .navbar-toggler{
+        padding-left: -5% !important;
+    }
+    .nav_desktop{
+        display: none !important;
+    }
+    .nav_table_smartphones{
+        display: inline-block !important;
     }
 }
