@@ -1,0 +1,38 @@
+:root{
+    --azzurro: #44bbde;
+    --verde: #7cea25;
+}
+html {
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    background: transparent;
+}
+.nav_container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.navbar_logo{
+    width: 30%;
+    padding-left: 20%;
+}
+.navbar-nav > a{
+    font-size: 125%;
+}
+
+/*Smartphone management*/
+@media only screen and (max-width:950px){
+}
+
+/*Tablet management*/
+@media only screen and (max-width:1120px){
+    .navbar_logo{
+        width: 25%;
+        padding-left: 5%;
+    }
+    .navbar-nav{
+        margin-left: -50% !important;
+    }
+}
