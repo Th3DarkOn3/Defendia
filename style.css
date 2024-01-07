@@ -40,6 +40,9 @@ nav > div > ul > li > a{
     justify-content: space-evenly;
     margin-left: 10% !important;
 }
+.card-title{
+    background-color: rgba(0, 0, 0, 0.8) !important;
+}
 
 /* widescreen */
 @media only screen and (max-width: 2560px) {
@@ -61,7 +64,8 @@ nav > div > ul > li > a{
         width: 13% !important;
     }
     .offers{
-        margin-left: 0% !important;
+        margin-left: 0 !important;
+        margin-right: 15% !important;
     }
 }
 
