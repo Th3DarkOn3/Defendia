@@ -10,105 +10,72 @@ html {
     height: 0px;
     background: transparent;
 }
-header{
-    margin-top: 8% !important;
+.nav-wrapper{
+    height: 180% !important;
+}
+.nav-wrapper > ul{
+    margin-top: 1% !important;
+    margin-right: 5% !important;
 }
 .navbar_logo{
-    display: inline-block !important;
-    width: 30%;
-    padding-left: 20%;
+    margin: 0.3% 0 0 15% !important;
+    width: 10% !important;
 }
-.navbar_logo_smartphone{
-    display: none !important;
-}
-.nav_table_smartphones{
-    display: none !important;
-}
-.nav-link, .navbar-brand{
-    font-size: 125% !important;
-    color: white !important;
-    text-transform: uppercase;
-}
-.nav-link:hover{
+.phone_number{
+    font-size: 200% !important;
     color: var(--verde) !important;
-}
-.navbar_logo{
-    width: 30% !important;
-}
-.phone{
-    position: absolute !important;
-    color: var(--verde) !important;
-    font-size: 190% !important;
-    padding: 0.5% !important;
+    border: var(--verde) 1px solid !important;
     border-radius: 10px !important;
-    background-color: rgb(40, 40, 40) !important;
-    top: 105% !important;
-    left: 84% !important;
 }
-.phone > a {
-    text-decoration: none !important;
-    color: var(--verde) !important;
+.phone_number:hover{
+    background-color: var(--verde) !important;
+    color: black !important;
+}
+nav > div > ul > li > a{
+    text-transform: uppercase !important;
 }
 .offers{
-    margin-top: 10% !important;
-    margin-bottom: 5% !important;
-    display: flex !important;
+    margin-top: 5% !important;
+    display: flex;
     justify-content: space-evenly;
-    max-width: 90% !important;
-    margin-left: 5% !important;
+    margin-left: 10% !important;
 }
-.card{
-    width: 20% !important;
-}
-@media only screen and (max-width:1800px){
-    .collapse{
-        margin-left: -35% !important;; 
-    }
-    .phone{
-        left: 80% !important;
-        font-size: 180% !important;
-    }
+
+/* widescreen */
+@media only screen and (max-width: 2560px) {
 }
 /*Smartphone management*/
-@media only screen and (max-width:992px){
-    .navbar_logo{
-        display: none !important;
+@media only screen and (max-width:991px){
+    .phone_number{
+        border: none !important;
     }
-    .navbar_logo_smartphone{
-        display: inline-block !important;
-        width: 15%;
+    .nav-wrapper{
+        height: 100% !important;
+    }
+    .nav-wrapper > ul{
+        margin-top: 0 !important;
+        margin-right: 0 !important;
+    }
+    .navbar_logo{
+        margin: 0 0 0 40% !important;
+        width: 13% !important;
     }
     .offers{
-        flex-direction: column !important;
-        justify-content: center !important;
-        align-items: center !important;
-    }
-    .card{
-        margin-top: 5% !important;
-        width: 90% !important;
+        margin-left: 0% !important;
     }
 }
 
 /*Tablet management*/
-@media only screen and (max-width:1325px){
-    .navbar_logo{
-        padding: 0 0 0 1% !important;
-        margin: 0 0 0 1% !important;
-    }
-    .navbar-toggler{
-        padding-left: -5% !important;
-    }
-    .nav_desktop{
-        display: none !important;
-    }
-    .nav_table_smartphones{
-        display: inline-block !important;
-    }
+@media only screen and (max-width:1200px){
     .offers{
-        max-width: 98% !important;
-        margin-left: 1% !important;
+        margin-left: 25% !important;
+        flex-direction: column !important;
     }
-    .card{
-        width: 30% !important;
+    .navbar_logo{
+        margin: 0.3% 0 0 10% !important;
+    }
+    .nav-wrapper > ul{
+        margin-top: 2% !important;
+        margin-right: 1% !important;
     }
 }
