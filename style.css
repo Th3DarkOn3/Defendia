@@ -104,4 +104,11 @@ header{
     .nav_table_smartphones{
         display: inline-block !important;
     }
+    .offers{
+        max-width: 98% !important;
+        margin-left: 1% !important;
+    }
+    .card{
+        width: 30% !important;
+    }
 }
