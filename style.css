@@ -80,7 +80,12 @@ header{
     }
     .offers{
         flex-direction: column !important;
+        justify-content: center !important;
         align-items: center !important;
+    }
+    .card{
+        margin-top: 5% !important;
+        width: 90% !important;
     }
 }
 
