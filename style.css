@@ -6,9 +6,12 @@ html {
     scroll-behavior: smooth;
 }
 ::-webkit-scrollbar {
-    width: 0px;
+    width: 1px;
     height: 0px;
     background: transparent;
+}
+header{
+    margin-top: 8% !important;
 }
 .navbar_logo{
     display: inline-block !important;
@@ -32,11 +35,38 @@ html {
 .navbar_logo{
     width: 30% !important;
 }
-
-
+.phone{
+    position: absolute !important;
+    color: var(--verde) !important;
+    font-size: 190% !important;
+    padding: 0.5% !important;
+    border-radius: 10px !important;
+    background-color: rgb(40, 40, 40) !important;
+    top: 105% !important;
+    left: 84% !important;
+}
+.phone > a {
+    text-decoration: none !important;
+    color: var(--verde) !important;
+}
+.offers{
+    margin-top: 10% !important;
+    margin-bottom: 5% !important;
+    display: flex !important;
+    justify-content: space-evenly;
+    max-width: 90% !important;
+    margin-left: 5% !important;
+}
+.card{
+    width: 20% !important;
+}
 @media only screen and (max-width:1800px){
     .collapse{
         margin-left: -35% !important;; 
+    }
+    .phone{
+        left: 80% !important;
+        font-size: 180% !important;
     }
 }
 /*Smartphone management*/
